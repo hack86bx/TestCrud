@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <h1 class="text-center mt-4">Suppression d'un lieu</h1>
+    <h1 class="text-center mt-4">Suppression lieu</h1>
     <?php
     include "inc/navbar.php";
     ?>
     <div id="content">
-        <h3 class="text-center mt-5">Article à supprimer</h3>
+        <h3 class="text-center mt-5">Supprimer article</h3>
 
         <?php
         if (isset($error)) :
@@ -41,9 +41,9 @@
             <h5 class="text-center mb-3">Description : <span class="fw-normal"><?= $getOneGeoloc['geolocdesc'] ?></span></h5>
             <h5 class="text-center mb-3">Latitude : <span class="fw-normal"><?= $getOneGeoloc['latitude'] ?></span></h5>
             <h5 class="text-center mb-3">Longitude : <span class="fw-normal"><?= $getOneGeoloc['longitude'] ?></span></h5>
-            <p class="text-center mt-2 fw-bold">Voulez-vous vraiment supprimer ce lieu ?</p>
+            <p class="text-center mt-2 fw-bold">Supprimer le lieu</p>
             <div class="text-center">
-                <a href=" ?delete=<?= $idDelete ?>&ok"><button value="supprimer" class="btn btn-outline-danger ">supprimer</button></a> | <a href="./"><button value="Non" class="btn btn-outline-info">Ne pas supprimer</button></a>
+                <a href=" ?delete=<?= $idDelete ?>&ok"><button value="supprimer" class="btn btn-outline-danger btn-lg px-4 me-sm-3">supprimer</button></a><a href="./"><button value="Non" class="btn btn-outline-dark btn-lg px-4 me-sm-3">Ne pas supprimer</button></a>
             </div>
 
         <?php endif ?>

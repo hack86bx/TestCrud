@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <h1 class="text-center mt-4">Update d'un article</h1>
+    <h1 class="text-center mt-4">Modification</h1>
     <?php
     include "inc/navbar.php";
     ?>
@@ -36,27 +36,28 @@
         //Nous avons un lieu
         else :
         ?>
-            <div class="container">
+            <div class="container text-center">
                 <div class="row justify-content-center align-items-center">
                     <form method="POST" name="geo" action="">
-                        <div class="mb-3">
+                        <div class="col-6"></div>
+                        <div class="mb-3 w-25">
                             <label for="titre" class=" form-label">Titre</label>
                             <input type="text" name="title" value="<?= $getOneGeoloc['title'] ?>" class="form-control" id="titre" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 w-25">
                             <label for="desc" class="form-label">Description</label>
-                            <textarea name="geolocdesc" class="form-control" id="desc" rows="3"><?= $getOneGeoloc['geolocdesc'] ?></textarea>
+                            <textarea name="geolocdesc" class="form-control" id="desc" rows="1"><?= $getOneGeoloc['geolocdesc'] ?></textarea>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 w-25">
                             <label for="latitude" class="form-label">Latitude</label>
                             <input type="number" value="<?= $getOneGeoloc['latitude'] ?>" name="latitude" step="0.000000001" class="form-control" id="latitude" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 w-25">
                             <label for="longitude" class="form-label">Longitude</label>
                             <input type="number" name="longitude" value="<?= $getOneGeoloc['longitude'] ?>" step="0.000000001" class="form-control" id="longitude" required>
                         </div>
-                        <div class="mb-3 text-center">
-                            <input type="submit" value="Modifier" class="btn btn-outline-success">
+                        <div class="mb-3 w-25">
+                            <input type="submit" value="Modifier" class="btn btn-outline-dark">
                         </div>
                     </form>
                 </div>
