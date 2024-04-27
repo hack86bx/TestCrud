@@ -10,6 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -35,10 +36,10 @@
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-6">
                         <div class="text-center my-5">
-                            <h1 class="display-5 fw-bolder text-white mb-2">liste lieux</h1>
+                            <h1 class="display-5 fw-bolder text-white mb-2">Liste lieux</h1>
                             <p class="lead text-white-50 mb-4">Emrah Arpaci CF2000</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Commencer</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="?connect">Connexion</a>
                
                             </div>
                         </div>
@@ -46,17 +47,10 @@
                 </div>
             </div>
         </header>
-        <!-- Features section-->
-       
-            <div class="container px-5 my-5">
-
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                        <div id="content">
-                            <h3 class="text-center mt-3">Liste de nos lieux</h3>
-                            
-                            <?php
-                              /*
+        <div id="content">
+        <h3 class="text-center mt-3">Liste de nos lieux</h3>
+        <?php
+        /*
         // datas est une chaine de caractère : erreur SQL ! 
         if (is_string($datas)) :
 
@@ -88,23 +82,22 @@
             endforeach;
         endif;
         */
-                            ?>
 
-                            <div id="resultat">
-                                <div id="map"></div>
-                                <div id="liste"></div>
-                            </div>
-                    
-                        </div>
-                    </div>
-                   
-                
-        </section>
+        ?>
+
+        <div id="resultat">
+            <div id="map"></div>
+            <div id="liste"></div>
+        </div>
+
+    </div>
        
-                
-        </section>
-        <!-- Contact section-->
-       
+  
+        <script src=" https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
+    </script>
+
+    <script src="../js/carteJSON.js"></script>
+    
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
