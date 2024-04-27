@@ -11,7 +11,7 @@
 </head>
 
 <body id="insertBody">
-    <h1 class="text-center mt-4">Insertion d'un lieu</h1>
+    <h1 class="text-center mt-4">Insertion</h1>
     <?php
     include "inc/navbar.php";
     ?>
@@ -36,8 +36,8 @@
                         <!--  <label for="longitude" class="form-label">Longitude</label>-->
                         <input type="number" name="longitude" placeholder="longitude" step="0.000000001" class="form-control w-25 mx-auto shadow-lg" id="longitude" required>
                     </div>
-                    <div class="mb-3 text-center">
-                        <input type="submit" value="Insérer" class="btn btn-outline-primary">
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <input type="submit" value="Insérer" class=class="btn btn-primary btn-lg px-4 me-sm-3">
                     </div>
                 </form>
             </div>
@@ -48,3 +48,4 @@
 </body>
 
 </html>
+

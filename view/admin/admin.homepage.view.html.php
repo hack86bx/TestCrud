@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    <h1 class="text-center mt-4">Accueil de l'administration</h1>
+    <h1 class="text-center mt-4">Accueil admin</h1>
 
     <?php
     include "inc/navbar.php";
     ?>
 
     <div id="content">
-        <h3 class="text-center mt-5">Administration des datas</h3>
+        <h3 class="text-center mt-5">Datas</h3>
         <?php
         // datas est une chaîne de caractère : erreur SQL !
         if (is_string($datas)) :
